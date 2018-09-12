@@ -1,0 +1,65 @@
+0.05b - more items!
+added zapping and confusion functionality.
+combat messages change color based on intensity of attack.
+added laser pointer - use it to blind and confuse your enemies
+bumping into a wall no longer spends a turn.
+items can be dropped. useful if you hit the limit.
+
+0.05a - forgot to implement most of thirst code. whoops.
+added some thirst-quenching items and changed needs rates.
+
+0.05 - basic needs!
+hunger and thirst now increases and needs to be managed.
+maxing either hunger or thirst causes the player to lose health.
+fixed a bug where enemies would spawn beneath the player.
+press enter to save a screenshot in the executable directory
+fade-in on game start.
+items now have multiple use functions, where only the primary prints a message.
+consuming food/drinks has various fun messages.
+some food also quenches thirst, and vice versa.
+
+0.04b - pickup prefix messages now randomized and picked from a list.
+
+0.04a - INVENTORY! items can now be picked up, stored and used. even corpses! try eating one.
+attack onomatopoeia added. big list of pow/biff/wham/etc. not yet grouped by attack damage.
+VERY early basic needs system implemented. as of now, hunger/thirst do not increase.
+slightly restructured GUI to allow for more messages in the log panel.
+
+0.04 - updated libtcod from 1.5 to 1.5.1! slightly better performance and other fun things!
+added health potions that do nothing. fun!
+attack intensity flavor text! chooses a random attack message from each tier of attack severity.
+the more damage an attack is, the more powerful the text becomes! calculated in percentages, so you don't get the same messages dealing 10hp to a demigod as you would on a mutated fish.
+critical hits reworked slightly, they now ignore enemy defense.
+monster and item spawning also reworked, now they don't spawn in walls. also, if a spawn fails, it gets discarded.
+key handling changed AGAIN to allow for 1.5.1. no more firing off on key releases.
+
+0.03a - changed .exe builder to pyInstaller. bigger filesize, less files.
+generic biohazard placeholder icon, doesn't show in game window yet.
+removed debugging console from builds.
+
+0.03 - GUI!
+an HP bar with values and a message log + message system has been implemented. 
+key handling slightly changed.
+added attack damage variation for more interesting combat
+added health regen for player and npcs, with constants for ez tweaking.
+critical hits implemented, with constants for ez tweekz.
+simple look command. currently just checks entire fov
+walking over items prints a message as well.
+
+0.02 - actual combat, with death and corpse spawning. an actual game!
+enemies chase you AND attack. now you can die, too.
+fixed a bug in the rendering system that caused corpses to show up only after player movement. 
+added "violent deaths", one of many gore gimmicks, at 120% damage of max hp
+
+0.01 - dungeon generator with field of view
+dungeon generation allows for intersecting rooms.
+fog of war introduced.
+objects can now block, and have names.
+object spawners spawn objects based on percentage rates, as well as working on a per-room basis.
+many, many constants to easily tweak config.
+movement script changed to use collission detection, as well as a 20 FPS limit to make controls more precise.
+combat turns and attacking are placeholder messages printed to console
+enemies chase you as long as they are in your FoV.
+combat! sort of. the dealing and taking of damage is implemented, death isn't.
+simple gui with just an HP counter for now.
+objects can now hold components, rather than just properties. FUN!
